@@ -13,6 +13,7 @@ def load_library (path)
     japanese_expression = expression[1]
     library[emotion][:english] = english_expression
     library[emotion][:japanese] = japanese_expression
+    binding.pry
   end
   library
 end
