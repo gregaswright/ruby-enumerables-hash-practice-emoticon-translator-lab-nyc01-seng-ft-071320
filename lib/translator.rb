@@ -9,11 +9,11 @@ def load_library (path)
     library = {}
   emoticons.each do |emotion, expression|
     library[emotion] = {}
+    binding.pry
     english_expression = expression[0]
     japanese_expression = expression[1]
     library[emotion][:english] = english_expression
     library[emotion][:japanese] = japanese_expression
-    binding.pry
   end
   library
 end
